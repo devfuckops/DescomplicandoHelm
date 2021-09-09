@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 name: giropops
-replicaCount: 5
+replicaCount: 10
 
 image:
   repository: linuxtips/nginx-prometheus-exporter
@@ -75,7 +75,7 @@ autoscaling:
   enabled: true
   minReplicas: 3
   maxReplicas: 100
-  targetCPUUtilizationPercentage: 40
+  targetCPUUtilizationPercentage: 10
   # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
